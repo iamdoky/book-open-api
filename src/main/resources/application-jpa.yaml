@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update  # Use 'create', 'create-drop', 'validate', or 'update' based on your need
+    show-sql: true  # Show SQL statements in the logs
+    properties:
+      hibernate:
+        format_sql: true  # Pretty print SQL statements in the logs

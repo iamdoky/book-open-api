@@ -1,0 +1,9 @@
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug  # Enable SQL debugging
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace  # Show parameter values

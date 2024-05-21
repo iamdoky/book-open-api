@@ -1,0 +1,17 @@
+server:
+  port: 8181
+
+spring:
+  profiles:
+    active: local
+    group:
+      local :
+        - db
+        - jpa
+        - logging
+        - naver
+      dev :
+        - db
+        - jpa
+        - logging
+        - naver

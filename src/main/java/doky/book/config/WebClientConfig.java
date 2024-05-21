@@ -1,4 +1,4 @@
-package doky.book.global.config;
+package doky.book.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
