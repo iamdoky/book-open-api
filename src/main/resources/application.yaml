@@ -3,14 +3,14 @@ server:
 
 spring:
   profiles:
-    active: local
+    active:
     group:
       local :
         - db
         - jpa
         - logging
         - naver
-      dev :
+      main :
         - db
         - jpa
         - logging
