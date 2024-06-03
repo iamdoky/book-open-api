@@ -1,4 +1,9 @@
+---
+
 spring:
+  config:
+    activate:
+      on-profile: local
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
@@ -6,4 +11,24 @@ spring:
     show-sql: true  # Show SQL statements in the logs
     properties:
       hibernate:
-        format_sql: true  # Pretty print SQL statements in the logs
+        show_sql: true # sql 쿼리를 보여줍니다. (한줄로 쭉..)
+        format_sql: true # sql query formatting (여러줄로 구분해서..)
+        use_sql_comments: true # sql 쿼리의 추가정보를 보여줍니다. (entity 출처 정보..)
+        temp.use_jdbc_metadata_defaults: false
+
+---
+spring:
+  config:
+    activate:
+      on-profile: main
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect # 쿼리의 기준이 되는 데이터베이스 엔진을 설정합니다.
+    hibernate:
+      ddl-auto: create  # Use 'create', 'create-drop', 'validate', or 'update' based on your need
+    show-sql: true  # Show SQL statements in the logs
+    properties:
+      hibernate:
+        show_sql: true # sql 쿼리를 보여줍니다. (한줄로 쭉..)
+        format_sql: true # sql query formatting (여러줄로 구분해서..)
+        use_sql_comments: true # sql 쿼리의 추가정보를 보여줍니다. (entity 출처 정보..)
+        temp.use_jdbc_metadata_defaults: false

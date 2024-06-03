@@ -1,11 +1,29 @@
+
+---
+
 spring:
+  config:
+    activate:
+      on-profile: local
   datasource:
     url: jdbc:h2:mem:testdb  # Use an in-memory H2 database
     driver-class-name: org.h2.Driver
     username: sa
     password:
-    platform: h2
   h2:
     console:
       enabled: true  # Enable H2 console for development purposes
       path: /h2-console  # Default path for the H2 console
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: main
+    datasource:
+      url: jdbc:postgresql://localhost:5432/test
+      username: postgres
+      password: 1234
+      driver-class-name: org.postgresql.Driver
+
