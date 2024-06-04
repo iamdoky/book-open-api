@@ -7,7 +7,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: update  # Use 'create', 'create-drop', 'validate', or 'update' based on your need
+      ddl-auto: create  # Use 'create', 'create-drop', 'validate', or 'update' based on your need
     show-sql: true  # Show SQL statements in the logs
     properties:
       hibernate:
@@ -17,6 +17,7 @@ spring:
         temp.use_jdbc_metadata_defaults: false
 
 ---
+
 spring:
   config:
     activate:
@@ -24,7 +25,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect # 쿼리의 기준이 되는 데이터베이스 엔진을 설정합니다.
     hibernate:
-      ddl-auto: create  # Use 'create', 'create-drop', 'validate', or 'update' based on your need
+      ddl-auto: update  # Use 'create', 'create-drop', 'validate', or 'update' based on your need
     show-sql: true  # Show SQL statements in the logs
     properties:
       hibernate:
