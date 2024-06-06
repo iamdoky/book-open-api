@@ -1,8 +1,9 @@
 package doky.book.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import doky.book.domain.enums.Gender;
+import doky.book.domain.enums.JoinType;
+import doky.book.domain.enums.MemberStatus;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,29 +22,32 @@ public class Member extends BaseEntity {
     private String birth;
 
     @Column(name = "gender")
-    private String gender;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 
     @Column(name = "phone")
     private String phone;
 
     @Column(name = "path")
-    private String path;
+    @Enumerated(EnumType.STRING)
+    private JoinType path;
 
     @Column(name = "email")
     private String email;
 
     @Column(name = "status")
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private MemberStatus status;
 
     @Builder
     private Member(
             String name,
             String birth,
-            String gender,
+            Gender gender,
             String phone,
-            String path,
+            JoinType path,
             String email,
-            String status) {
+            MemberStatus status) {
 
         this.name = name;
         this.birth = birth;
@@ -57,11 +61,11 @@ public class Member extends BaseEntity {
     public static Member of(
             String name,
             String birth,
-            String gender,
+            Gender gender,
             String phone,
-            String path,
+            JoinType path,
             String email,
-            String status) {
+            MemberStatus status) {
 
         return new Member(name, birth, gender, phone, path, email, status);
     }

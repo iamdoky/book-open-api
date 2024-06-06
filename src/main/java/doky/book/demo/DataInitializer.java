@@ -1,6 +1,9 @@
 package doky.book.demo;
 
 import doky.book.domain.Member;
+import doky.book.domain.enums.Gender;
+import doky.book.domain.enums.JoinType;
+import doky.book.domain.enums.MemberStatus;
 import doky.book.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -23,42 +26,42 @@ public class DataInitializer implements CommandLineRunner {
                         Member.of(
                                 "John Doe",
                                 "1990-01-01",
-                                "Male",
+                                Gender.MALE,
                                 "123-456-7890",
-                                "/path/to/resource",
+                                JoinType.NORMAL,
                                 "john.doe@example.com",
-                                "active"),
+                                MemberStatus.ACTIVE),
                         Member.of(
                                 "Jane Smith",
                                 "1985-05-15",
-                                "Female",
+                                Gender.FEMALE,
                                 "234-567-8901",
-                                "/path/to/another",
+                                JoinType.NORMAL,
                                 "jane.smith@example.com",
-                                "inactive"),
+                                MemberStatus.INACTIVE),
                         Member.of(
                                 "Alice Johnson",
                                 "1992-07-23",
-                                "Female",
+                                Gender.FEMALE,
                                 "345-678-9012",
-                                "/path/to/something",
+                                JoinType.KAKAO,
                                 "alice.johnson@example.com",
-                                "active"),
+                                MemberStatus.ACTIVE),
                         Member.of(
                                 "Bob Brown",
                                 "1988-03-12",
-                                "Male",
+                                Gender.MALE,
                                 "456-789-0123",
-                                "/path/to/somewhere",
+                                JoinType.NAVER,
                                 "bob.brown@example.com",
-                                "pending"),
+                                MemberStatus.ACTIVE),
                         Member.of(
                                 "Charlie Davis",
                                 "1995-11-30",
-                                "Male",
+                                Gender.UNDEFINED,
                                 "567-890-1234",
-                                "/path/to/unknown",
+                                JoinType.UNDEFINED,
                                 "charlie.davis@example.com",
-                                "active")));
+                                MemberStatus.WITHDRAW)));
     }
 }
