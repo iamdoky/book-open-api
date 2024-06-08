@@ -11,5 +11,4 @@ public record NaverSearchResponse(
         String pubdate,
         String isbn,
         String description) {
-
 }
