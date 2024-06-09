@@ -4,15 +4,14 @@ import doky.book.domain.enums.Gender;
 import doky.book.domain.enums.JoinType;
 import doky.book.domain.enums.MemberStatus;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "member")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@EqualsAndHashCode(callSuper = false)
+@ToString
 public class Member extends BaseEntity {
 
     @Column(name = "name")

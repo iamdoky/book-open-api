@@ -3,15 +3,14 @@ package doky.book.domain;
 import doky.book.domain.enums.JoinType;
 import doky.book.payload.response.NaverSearchResponse;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "book")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@EqualsAndHashCode(callSuper = false)
+@ToString
 public class Book extends BaseEntity {
 
     @Column(name = "title")
