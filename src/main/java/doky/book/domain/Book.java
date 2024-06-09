@@ -42,6 +42,7 @@ public class Book extends BaseEntity {
     private String description;
 
     @Column(name = "source")
+    @Enumerated(EnumType.STRING)
     private JoinType source;
 
     @Builder
