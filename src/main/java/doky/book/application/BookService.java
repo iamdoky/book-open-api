@@ -41,8 +41,7 @@ public class BookService {
     }
 
     private void saveByNaver(NaverBookResponse response) {
-        
-        
+
         response.items()
                 .stream()
                 .filter(book -> existByIsbn(book.isbn()))
