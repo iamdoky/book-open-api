@@ -23,8 +23,7 @@ public class BookService {
 
     private final BookRepository bookRepository;
 
-    public Mono<NaverBookResponse> search(
-            NaverSearchRequest request) {
+    public Mono<NaverBookResponse> search(NaverSearchRequest request) {
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
