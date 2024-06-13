@@ -1,15 +1,14 @@
 package doky.book.api;
 
-import doky.book.application.BookService;
+import doky.book.application.NaverBookService;
 import doky.book.payload.request.NaverSearchRequest;
 import doky.book.payload.response.NaverBookResponse;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
@@ -19,12 +18,12 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-public class BookController {
+public class NaverBookController {
 
-    private final BookService bookService;
+    private final NaverBookService naverBookService;
 
-    @Operation(summary = "네이버 책 검색", description = "네이버 책 검색을 합니다.")
-    @GetMapping(value = "")
+    @Operation(summary = "[네이버북] 검색한 대상 저장하기", description = "[네이버북] 검색한 대상을 조회 및 저장")
+    @PostMapping(value = "")
     public ResponseEntity<Mono<NaverBookResponse>> search(NaverSearchRequest request) {
 
 //            @Parameter(name = "keyword", description = "키워드 ex) 제목, ISBN, 저자명 ,,, ")
@@ -34,8 +33,6 @@ public class BookController {
 //            @Parameter(name = "start", description = "검색 시작 위치(기본값: 1, 최댓값: 1000)")
 //            @RequestParam(value = "start", defaultValue = "1") int start) {
 
-
-
-        return ResponseEntity.ok(bookService.search(request));
+        return ResponseEntity.ok(naverBookService.search(request));
     }
 }

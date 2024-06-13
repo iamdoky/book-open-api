@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
-public class BookService {
+public class NaverBookService {
 
     @Value("${naver.api.client-id}")
     private String clientId;
