@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-@Tag(name = "Naver Book")
+@Tag(name = "네이버북")
 @RequestMapping("/api/naver")
 @RestController
 @RequiredArgsConstructor
