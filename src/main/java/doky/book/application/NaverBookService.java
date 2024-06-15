@@ -17,8 +17,10 @@ public class NaverBookService {
 
     @Value("${naver.api.client-id}")
     private String clientId;
+
     @Value("${naver.api.client-secret}")
     private String clientSecret;
+
     private final WebClient webClient;
 
     private final BookRepository bookRepository;
