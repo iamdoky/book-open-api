@@ -9,4 +9,5 @@ public record NaverBookResponse(
         int start,
         int display,
         List<NaverSearchResponse> items) {
+
 }
