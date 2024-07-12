@@ -12,4 +12,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @Slf4j
 public class AladinController {
+
 }
