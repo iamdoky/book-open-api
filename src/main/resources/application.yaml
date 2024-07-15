@@ -10,8 +10,10 @@ spring:
         - jpa
         - logging
         - naver
+        - aladin
       main :
         - db
         - jpa
         - logging
         - naver
+        - aladin

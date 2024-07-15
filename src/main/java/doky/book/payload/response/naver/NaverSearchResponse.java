@@ -1,7 +1,8 @@
-package doky.book.payload.response;
+package doky.book.payload.response.naver;
 
 
 public record NaverSearchResponse(
+
         String title,
         String link,
         String image,

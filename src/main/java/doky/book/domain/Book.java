@@ -1,7 +1,7 @@
 package doky.book.domain;
 
 import doky.book.domain.enums.JoinType;
-import doky.book.payload.response.NaverSearchResponse;
+import doky.book.payload.response.naver.NaverSearchResponse;
 import jakarta.persistence.*;
 import lombok.*;
 
