@@ -1,4 +1,4 @@
-package doky.book.payload.response;
+package doky.book.payload.response.naver;
 
 import java.util.List;
 
