@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-@Tag(name = "네이버북")
+@Tag(name = "네이버")
 @RequestMapping("/api/naver")
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-public class NaverBookController {
+public class NaverController {
 
     private final NaverBookService naverBookService;
 

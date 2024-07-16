@@ -15,6 +15,14 @@ public class WebClientConfig {
                 .build();
     }
 
+    @Bean(name = "kakaoWebClient")
+    public WebClient kakaoWebClient() {
+
+        return WebClient.builder()
+                .baseUrl("https://dapi.kakao.com")
+                .build();
+    }
+
     @Bean(name = "aladinWebClient")
     public WebClient aladinWebClient() {
 
