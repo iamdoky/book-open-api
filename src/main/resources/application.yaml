@@ -10,10 +10,13 @@ spring:
         - jpa
         - logging
         - naver
+        - kakao
         - aladin
+
       main :
         - db
         - jpa
         - logging
         - naver
+        - kakao
         - aladin
