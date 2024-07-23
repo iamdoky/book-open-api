@@ -1,7 +1,5 @@
 package doky.book.payload.response.kakao;
 
-import java.util.List;
-
 public record KakaoDocument(
 
         String[] authors,
