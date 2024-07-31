@@ -22,3 +22,6 @@
 18. 난중에 Docker + AWS 배포 해보기
 19. Swagger 및 PostMan 으로 커스텀 하기
 20. api 공통 응답객체 만들기
+21. api 공통 응답객체 디자인패턴 적용하기 - 빌더 팩토리 파사드 전략 중에 선택
+22. GlobaExceptionHanler 피ㄹ요
+23. 
