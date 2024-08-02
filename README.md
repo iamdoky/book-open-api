@@ -1,6 +1,6 @@
 ### [Book]
 
-- 해볼 거 
+- 해볼 거  
   
 1. 카카오, 네이버 도서 검색하기
 2. 카카오, 네이버 도서 상세조회
@@ -23,5 +23,5 @@
 19. Swagger 및 PostMan 으로 커스텀 하기
 20. api 공통 응답객체 만들기
 21. api 공통 응답객체 디자인패턴 적용하기 - 빌더 팩토리 파사드 전략 중에 선택
-22. GlobaExceptionHanler 피ㄹ요
+22. GlobaExceptionHanler 
 23. 
