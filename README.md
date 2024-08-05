@@ -13,7 +13,7 @@
 9. 읽기 중인 책 페이지 및 진행도 작성하기
 10. 읽기 완료된 목록 조회
 11. 회원 체계 괸리
-12. spring security + OAuth 2.0 + JWT
+12. spring security + OAuth 2.0 + JWT + 키클락
 13. Social Login
 14. Logout
 15. 회원가입 + 회원탈퇴?? => Normal 가입 회원??
@@ -21,3 +21,7 @@
 17. ELK 적용해보기
 18. 난중에 Docker + AWS 배포 해보기
 19. Swagger 및 PostMan 으로 커스텀 하기
+20. api 공통 응답객체 만들기
+21. api 공통 응답객체 디자인패턴 적용하기 - 빌더 팩토리 파사드 전략 중에 선택
+22. GlobaExceptionHanler 
+
